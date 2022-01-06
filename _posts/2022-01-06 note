@@ -1,0 +1,15 @@
+public void testUseSimpleDateFormat() {
+		Date d0 = new Date(12345678228L);
+		SimpleDateFormat sdf0 = new SimpleDateFormat();
+		System.out.println("以SimpleDateFormat形式格式化d0"+sdf0.format(d0));
+		
+	}
+  输出：以SimpleDateFormat形式格式化d070-5-24 上午5:21
+  
+  public void testUseSimpleDateFormat() {
+		Date d0 = new Date(12345678228L);
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy/MM/dd a",Locale.CHINA);
+		System.out.println("以SimpleDateFormat 国家形式格式化d0"+sdf2.format(d0));
+		
+	}
+  输出：以SimpleDateFormat 国家形式格式化d01970/05/24 上午
